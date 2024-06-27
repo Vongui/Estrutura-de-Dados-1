@@ -136,7 +136,7 @@ int remover_posicao(Lista *l, int pos){
     else
     {
         elem = l->info[pos];
-        for (int i = pos; i <+ l->n; i++)
+        for (int i = pos; i <= l->n; i++)
         {
             l->info[i] = l->info[i+1];
         }
