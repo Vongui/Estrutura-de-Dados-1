@@ -45,10 +45,12 @@ int desempilhar(Pilha **topo){
 
     if (vazia(*topo)) {
         printf("\nPilha vazia");
+        return NULL;
     }
     else {
-        *topo = (*topo)->next;
+        p = *topo;
         elem = p->info;
+        *topo = p->next;
         freenode(p);
         return elem;
     }

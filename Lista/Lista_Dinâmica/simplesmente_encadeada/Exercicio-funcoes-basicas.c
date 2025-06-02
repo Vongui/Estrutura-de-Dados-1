@@ -82,7 +82,7 @@ void insere_fim(Lista **lista, int x)
             aux->next = q;
         }
     }
-
+    
     else
     {
         printf("\nErro na alocação");
